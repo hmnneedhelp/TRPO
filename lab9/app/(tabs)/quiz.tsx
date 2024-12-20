@@ -40,6 +40,8 @@ const QuizScreen = () => {
         </View>
       ))}
       <Button title="Ответить" onPress={handleAnswer} disabled={selectedOption === null} />
+            <Button title={"Очистить"} onPress={()=>setAnswers([])} />
+      
     </View>
     
     </GestureHandlerRootView>
